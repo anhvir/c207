@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
 		n= atoi( argv[1] );
 	} else if (argc==3) {
 		method= toupper( *(argv[1]) );
-		n= atoi (argv[1]);
+		n= atoi (argv[2]);
 	} else wrongArg= 1;
 	if (wrongArg || n<1 || n>MAX_N || !strchr("RAE",method) ) {
 		fprintf(stderr,
