@@ -2,7 +2,7 @@
 	Purpose: returns CPU time (in seconds) between 
 			 the previous call to cpu_time() and now
 
-	Anh Vo, anhvir@gmail.com, 
+	Anh Vo, anhvir@gmail.com, 8 Apr 2017
 */
 
 
@@ -11,8 +11,8 @@
 
 
 
-// returns the CPU time (in seconds) used between two consecutive calls
-//    to the function 
+// returns the CPU time (in seconds) used the previous call 
+//    and the current call to this function
 double cpu_time() {
 	static double prev_clock= -1;
 	if (prev_clock<0) prev_clock= clock(); // this happens only once
