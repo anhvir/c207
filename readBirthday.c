@@ -2,14 +2,13 @@
 
 
 #define MAX_NAME 30
-#define FNAME "birthday.data.txt"
 
 int main(int argc, char *argv[]) {
 	char name[MAX_NAME+1];
 	int month;
 
-	printf("Content of file %s\n", FNAME);
-	printf("    name          month_of_birth\n");      
+	printf("The input data:\n");
+	printf("    name             month_of_birth\n");      
 	while( scanf("%[^,], %d ", name, &month) == 2 ) {
 		// Note: %[^,]  means "read all character until comma"
 		//            , means just consume the comma (not assigning)
