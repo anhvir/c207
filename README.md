@@ -1,6 +1,6 @@
 c207 Week 02:
 =======
-  * `fibonacci.c` : A good skeleton for Question 2 of the Lab (or just L2 for short). Download it and use it at a starting point for L2. It probably helps to save some of your time. Perhaps, you can also learn or recall something.
+  * `fibonacci.c` : A skeleton for Question 2 of the Lab (or just L2 for short). Download it and use it at a starting point for L2. It probably helps to save some of your time. Perhaps, you can also learn or recall something.
   * `birthday.data.txt` : A sample data file, in CVS format, for L4. Note you should combine L3 and L4 into one single program. If you are not sure how to read the data in `birthday.data.txt`, you can have a look at the next file.
   * `readBirthday.c` : A small and simple program that reads and prints out the content of birthday.data.txt.
 
