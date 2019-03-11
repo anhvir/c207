@@ -75,11 +75,11 @@ int main(int argc, char **argv) {
     printf("Fibonacci calculation using the %s method\n", methodNames[method]);
 	
 	// running a chosen Fib version
-	printf ("%d-th Fibonacci number is %d\n", n, fibFunctions[method](method));
+	printf ("%d-th Fibonacci number is %d\n", n, fibFunctions[method](n));
 	
 	/* if you don't like array of function pointers, you can replace
 	   the last member above with something like: 
-	   method==0? fibRecursive(method) : (method==1? fibArray(method) : ...)
+	   method==0? fibRecursive(n) : (method==1? fibArray(n) : ...)
 	*/
 	
 	return 0;
