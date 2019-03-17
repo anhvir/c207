@@ -1,8 +1,45 @@
-c207 Week 02:
+c207 Week 03:
 =======
-  * `fibonacci.c` : A skeleton for Question 2 of the Lab (or just L2 for short). Download it and use it at a starting point for L2. It probably helps to save some of your time. Perhaps, you can also learn or recall something.
-  * `birthday.data.txt` : A sample data file, in CSV format, for L4. Note you should combine L3 and L4 into one single program. If you are not sure how to read the data in `birthday.data.txt`, you can have a look at the next file.
-  * `readBirthday.c` : A small and simple program that reads and prints out the content of `birthday.data.txt`, run it with `readBirthday < birthday.data.txt` .
+### Additional guidelines for the LMS Lab Task
+In this lab we learn about building a multi-file C project.
+Each project should have its own folder, so you should create one
+for this sample project. It's a good idea to download all LMS
+files (`list.c`, `list.h` and `Makefile`), and all files of this
+github site (except for `README.md`), then place them under your
+sample project folder.
+ 
+  * Task 1 (Header files): Choose a very simple task for `main-1.c`. 
+For example, just create a list that have 10 nodes with data value
+from 1 to 10, then remove and print each data. File `main-1.c` in this github
+site is a skeleton for that simple task. Note: to add a new node, 
+you can first use list_add_start, then list_add_end. 
+
+  * Task 2 (Module making): To make a module for stack, you need to
+build 2 files: `stack.h` and `stack.c`. The first contains only 
+the description of data type `Stack` (or `stack_t` if you like), and 
+the prototype of the functions `new_stack`, `free_stack` ... The second
+contains the implementation of the functions. Note that these functions
+are very simple - **just a single statement in the body of each function**.
+Again, main-2.c should be very simple, such as: insert the number 1, 2, ...,
+10 into a queue, then dequeue, print, and push them into a stack, and
+finally pop them from the stack and print again. File main-2.c from this
+site serves as a skeleton for that simple task.
+
+  * Task 3 (Compiling and linking): Here you should realise 2 different 
+ways of compiling a multi-file C project. If we take Task 1 as a project, the first way to compile is:
+
+`gcc -o main-1 main-1.c list.c`
+
+And the second way is to use 3 commands:
+
+1 `gcc -c main-1.c`
+1 `gcc -c list.c`
+1 `gcc -o main-1 main-1.o list.o`
+
+A good point of the second way is: if you change `main-1.c`, you just need to do step 1 and 3 to compile the whole project.
+ No think about this advantage if your project contains hundreds of `.c` files.
+
+
 
 How to use this github site?
 ----------------------------
