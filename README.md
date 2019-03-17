@@ -32,9 +32,9 @@ ways of compiling a multi-file C project. If we take Task 1 as a project, the fi
 
 And the second way is to use 3 commands:
 
-1 `gcc -c main-1.c`
-1 `gcc -c list.c`
-1 `gcc -o main-1 main-1.o list.o`
+  1 `gcc -c main-1.c`
+  1 `gcc -c list.c`
+  1 `gcc -o main-1 main-1.o list.o`
 
 A good point of the second way is: if you change `main-1.c`, you just need to do step 1 and 3 to compile the whole project.
  No think about this advantage if your project contains hundreds of `.c` files.
