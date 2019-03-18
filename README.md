@@ -10,7 +10,7 @@ sample project folder.
  
   * Task 1 (Header files): Choose a very simple task for `main-1.c`. 
 For example, just create a list that have 10 nodes with data value
-from 1 to 10, then remove and print each data. File `main-1.c` in this github
+from 1 to 10, then remove each data from the list and print it. File `main-1.c` in this github
 site is a skeleton for that simple task. Note: to add a new node, 
 you can first use list_add_start, then list_add_end. 
 
@@ -36,8 +36,8 @@ And the second way is to use 3 commands:
 1. `gcc -c list.c`
 1. `gcc -o main-1 main-1.o list.o`
 
-A good point of the second way is: if you change `main-1.c`, you just need to do step 1 and 3 to compile the whole project.
- No think about this advantage if your project contains hundreds of `.c` files.
+A good point of the second way is: if you change `main-1.c`, you just need to do step 1 and 3 to compile the whole project (ie. skip step 2).
+ Now think about this advantage if your project contains hundreds of `.c` files.
 
   * Task 4 (Makefile): Learn to use automatic compilation with `Makefile`.
 If your current folder has a text file `Makefile`, in minGW you can run
