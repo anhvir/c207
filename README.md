@@ -3,7 +3,7 @@ c207 Week 03:
 ### Additional guidelines for the LMS Lab Task
 In this lab we learn about building a multi-file C project.
 Each project should have its own folder, so you should create one
-for this sample project. It's a good idea to download all LMS
+for your today's sample project. It's a good idea to download all LMS
 files (`list.c`, `list.h` and `Makefile`), and all files of this
 github site (except for `README.md`), then place them under your
 sample project folder.
