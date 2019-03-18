@@ -39,7 +39,20 @@ And the second way is to use 3 commands:
 A good point of the second way is: if you change `main-1.c`, you just need to do step 1 and 3 to compile the whole project.
  No think about this advantage if your project contains hundreds of `.c` files.
 
+  * Task 4 (Makefile): Learn to use automatic compilation with `Makefile`.
+If your current folder has a text file `Makefile`, in minGW you can run
+command `make`. It will read that `Makefile` and will follow the instructions
+ in that file and compile your project. Open and read that `Makefile` and
+ try to understand. 
 
+  * Additional task: If you think that the above main-1.c and main-2.c are
+ too boring, you can write some other program that have a better use
+ of stack/queue. Or you can try to use `postfix.c`. Can you add an extra
+ goal into your `Makefile`, called `postfix`, which is for compiling 
+ postfix? (remember that postfix is a combination of 3: postfix.c, list.c, 
+ and stack.c). Try to modify `Makefile` so that when you run `make postfix` 
+ the system will compile postfix for you. Try and enjoy `postfix` with 
+ `postfix < postfix_data.txt`. 
 
 How to use this github site?
 ----------------------------
