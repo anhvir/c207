@@ -4,9 +4,11 @@ c207 Week 07:
 
   Instructions:
 --------------- 
-  * Copy the hole folder to your computer,
-  * Have a look at `*.h` file, and graph data file `graph_data.txt`
-  * Implement function dijkstra() which is in `graph.c`
+  * Copy the whole folder to your computer,
+  * Compile with `make` and try with `./dijkstra < graph_data.txt`
+  * Then, have a look at `*.h` file, and graph data file `graph_data.txt`
+  * Next, implement function dijkstra() which is in `graph.c`. Note that you should only view the `.h` files while implementing dijkstras
+  * Note that your dijkstra should output some information (such as cost of shortest path from vertex 0 to other vertices) so that you can test if it works correctly.
   * Test your program with `./dijkstra < graph_data.txt`
 
 
