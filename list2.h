@@ -1,8 +1,10 @@
 /* list2:
    Module for creating and manipulating singly-linked lists of
-     (int id, double weight)
-     for use with:   + weighted graph
-                     + naive implementation of priority queue
+        data_t elements
+
+   Dependencies: data_type.c, data_type.h  
+    
+
    Created by Anh Vo <anhvir@gmail.com>
    Based on the original module "list" which was:
  * created for COMP20007 Design of Algorithms 2017
@@ -11,14 +13,9 @@
  * list_contains(), ListIterator created for COMP20007 2019 Workshop 4
  * by Tobias Edwards <tobias.edwards@unimelb.edu.au>
  */
-// 'include guards': these lines (and #endif at the bottom) prevent this file
-// from being included multiple times. multiple inclusion can cause errors on
-// some compilers, especially if the included file contains struct definitions
-// how it works: https://en.wikipedia.org/wiki/Include_guard
 
-
-#ifndef _LIST2_H
-#define _LIST2_H
+#ifndef _LIST2_H_
+#define _LIST2_H_
 
 #include <stdbool.h>
 #include "data_type.h"

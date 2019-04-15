@@ -1,6 +1,12 @@
-/* * * * * * *
- * Module for creating and manipulating singly-linked lists of integers
- *
+/* list2:
+   Module for creating and manipulating singly-linked lists of
+        data_t elements
+
+   Dependencies: data_type.c, data_type.h  
+    
+
+   Created by Anh Vo <anhvir@gmail.com>
+   Based on the original module "list" which was:
  * created for COMP20007 Design of Algorithms 2017
  * by Matt Farrugia <matt.farrugia@unimelb.edu.au>
  *
@@ -38,7 +44,7 @@ void free_node(Node *node);
 // this is required to avoid exposing the underlying node structure of the
 // list to the user
 struct list_iterator {
-  Node *next;
+	Node *next;
 };
 
 /* * * *
@@ -269,6 +275,12 @@ data_t list_iterator_next(ListIterator *iterator) {
   return value;
 }
 
+
+/******************************************
+   The remaining functions were created by anhvir@gmail.com
+   for implementing naive priority queue
+***********************************************/
+
 // print a list in format data->data->...
 void print_list(List *l) {
 	Node *n= l->head;
@@ -286,23 +298,28 @@ data_t list_remove_min(List *l) {
 	data_t d;
 	assert(l->size > 0);
 
-	// find the min and store the min data
+	// make *min the one that points to min element
 	for (pp= &(l->head); *pp ; pp= &((*pp)->next)) {
 		if ((*min)->data.weight > (*pp)->data.weight) {
 			min= pp; 
 		}
 	}
 	
+	// keep *min for freeing later
 	Node *ppp= *min;
-	*min= (*min)->next;
 
+	// cut off *min from the list chain
+	*min= (*min)->next;
+	l->size--;
+
+	// special case when list becomes NULL
 	if (l->head==NULL) {
 		l->tail= NULL;
 	}
 
 	d= ppp->data;
 	free(ppp);
-	l->size--;
+
 	return d;
 }
 

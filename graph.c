@@ -84,7 +84,7 @@ void add_edge(char *uname, char *vname, double weight, graph_t *g) {
 	g->m++;
 }
 		
-
+// read graph from stdin
 void read_graph( graph_t *g) {
 	char uname[MAX_NAME_LEN+1], vname[MAX_NAME_LEN+1];
 	double weight;
@@ -96,6 +96,7 @@ void read_graph( graph_t *g) {
  	printf("Graph built with %d vertices and %d edges\n", g->n, g->m);
 } 
 
+
 void free_graph(graph_t *g) {
 	int i;
 	for (i=0; i<g->n; i++) 
@@ -103,10 +104,12 @@ void free_graph(graph_t *g) {
 	free(g->vs);
 	free(g);
 }
+
+
 void print_graph(graph_t *g) {
 	int i;
  	printf("\nGraph has %d vertices and %d edges\n", g->n, g->m);
-	printf("vid  name     Adjacency List\n");
+	printf("vid  name     Adjacency List of (vertex id, weight) \n");
 	printf("=== ======   ======================================\n");
 
 	for (i=0; i<g->n; i++) {
@@ -126,6 +129,6 @@ void dijkstras(graph_t *g, int source) {
 	fprintf(stderr, "\nBefore implementing, read graph.h, priorityqueue.h"
 		" and data_type.h\n\n");
 	fprintf(stderr, "Additional task: Build a graph data file campus.txt\n"
-					"then run your program to find the quickest path from level 2 Asia Centre\n"
-					"to Room 114 of 221 Bouverie St :-)\n\n"); 
+		"then run your program to find the quickest path from level 2 Asia Centre\n"
+		"to Room 114 of 221 Bouverie St :-)\n\n"); 
 }
