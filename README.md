@@ -1,15 +1,12 @@
 c207 Week 07:
 =======
-  The folder contain all files needed for a naive implementation of Dijkstra's algorithm.
 
-  Instructions:
+  Instructions this week:
 --------------- 
-  * Copy the whole folder to your computer,
-  * Compile with `make` and try with `./dijkstra < graph_data.txt`
-  * Then, have a look at `*.h` file, and graph data file `graph_data.txt`
-  * Next, implement function dijkstra() which is in `graph.c`. Note that you should only view the `.h` files while implementing dijkstras
-  * Note that your dijkstra should output some information (such as cost of shortest path from vertex 0 to other vertices) so that you can test if it works correctly.
-  * Test your program with `./dijkstra < graph_data.txt`
+  * Follow the instruction in LMS.Workshop.Week8
+  * Then, spend some time to inspect graph.c
+  * `graph.c` is the solution for week 7 lab, you just need to download this file and include it in your lab week 7 folder. `SPECIAL FEATURE:` I included 2 options for Dijkstra's, one of which is exactly as the pseudocode shown in the lecture, which can help you to see that there is not much difference between a pseudocode and a C function :-). This implementation of Dijkstra's also prints out all shortest paths. 
+  * `week7_git_solution.zip` is a folder that contains all files needed for week 7 solution. You shouldn't need this one. It is useful only if ou have lost all of your week 7 files.
 
 
 How to use this github site?
