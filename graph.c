@@ -132,7 +132,7 @@ void print_path(int prev[], graph_t *g, int source, int dest);
 // Replace 1 by 0 if you want to use the standard Dijlstra's,
 //   ie the one that is the same as shown in the lecture
 
-#if 1
+#if 0
 // NON-standard version of Dijkstra's:
 // Print out the shortest paths from the source node to each other node
 void dijkstras(graph_t *g, int source) {
@@ -239,8 +239,10 @@ void dijkstras(graph_t *g, int v0) {
 	// To store current min-costs and previous vertices
 	int *prev;		// prev[v]=u if v was reached from u 
   	double *dist;	// dist[v]= current best dist from source to v
+	bool *inQ;	// a helping array for quick check if v in Q
 	assert(prev= malloc( g->n * sizeof(*prev) ) );
 	assert(dist= malloc( g->n * sizeof(*dist) ) );
+	assert(inQ= malloc( g->n * sizeof(*inQ) ) );
 
 	/* Initialization ------------------------------ */
 	for (v = 0; v < g->n; v++) {  //* foreach v in V
@@ -253,6 +255,7 @@ void dijkstras(graph_t *g, int v0) {
 	pq_t *Q = new_pq();
 	for (v = 0; v < g->n; v++) {
 		pq_enqueue(Q, v, dist[v]);
+		inQ[v]= true;			// marks v as being inside the queue
 	}
 		
 	/* Main loop of Dijkstra's ------------------------------ */
@@ -262,7 +265,8 @@ void dijkstras(graph_t *g, int v0) {
 
 	while (!pq_is_empty(Q)) {  //* while Q is non empty do
 		// remove min vertex 
-    	u = pq_remove_min(Q);  //    u= EjectMin(Q)
+    	u = pq_remove_min(Q);  //*    u= EjectMin(Q)
+		inQ[u]= false;         //     marks u as not in Q anymore
 		
 		// With this vertex u:
 		//   first, copies the adjacency list of u to array neighbours
@@ -273,8 +277,7 @@ void dijkstras(graph_t *g, int v0) {
 			weight= neighbours[v].weight;
 
 			//* if (w in Q && dist[v]+weight(u,w) <dist[v]
-			//    here no need to check for "w in Q"
-			if ( dist[w] > dist[u]+weight) {  
+			if ( inQ[w] && dist[w] > dist[u]+weight) {  
 				dist[w] = dist[u]+weight;  //* dist[w]= dist[u]+weight(u,v)          
 				prev[w] = u;               //* prev[w]= u 
 			                               //* Update(Q, w, dist[w])

@@ -3,10 +3,10 @@ c207 Week 07:
 
   Instructions this week:
 --------------- 
-  * Follow the instruction in LMS.Workshop.Week8
-  * Then, spend some time to inspect graph.c
+  * For this week's lab, follow the instruction in LMS.Workshop.Week8. All the files needed for the lab are supplied there.
+  * Then, spend some time to inspect `graph.c`
   * `graph.c` is the solution for week 7 lab, you just need to download this file and include it in your lab week 7 folder. `SPECIAL FEATURE:` I included 2 options for Dijkstra's, one of which is exactly as the pseudocode shown in the lecture, which can help you to see that there is not much difference between a pseudocode and a C function :-). This implementation of Dijkstra's also prints out all shortest paths. 
-  * `week7_git_solution.zip` is a folder that contains all files needed for week 7 solution. You shouldn't need this one. It is useful only if ou have lost all of your week 7 files.
+  * `week7_git_solution.zip` is a folder that contains all files needed for week 7 solution. You shouldn't need this one. It is useful only if you have lost all of your week 7 files.
 
 
 How to use this github site?
