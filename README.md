@@ -13,7 +13,7 @@ If you want some hints, read the second part of this document.
 ---------------------------
 ### Job 1: Unix's tsort:
 First at all, of course, create a separate folder for this week's lab. Let's call it `tsort` and make it the working directory. You should download all `*.c` and `.h` files supplied in LMS this week here. Then: 
-  * Create a text file `graph1.txt` for the graph in shown in the lab sheet. It should have 8 lines exactly as as shown in the input for tsort.
+  * Create a text file `graph1.txt` for the graph shown in the lab sheet. It should have 8 lines exactly as as shown in the input for tsort.
   * Try `tsort` with command `tsort < graph1.txt`.
   * Build `graph2.txt` for the second graph drawn in the lab sheet. And try `tsort` for this graph. Also create a toposort ordering by hand and compare with the output of tsort.
 
@@ -21,7 +21,7 @@ First at all, of course, create a separate folder for this week's lab. Let's cal
 Of course, you need to build a graph first. In this week, we use directed graphs. Your program should take files such as `graph1.txt` and `graph2.txt` as input, and should produce outputs that are identical to those of the Unix's `tsort`.
   * Note that vertex name is just a single character. So your graph have maximal 256 vertices (and hence, if you prefer, you can avoid some `malloc` for graphs). 
   * You might want to use adjacency list to represent graphs. Module `list.c` and `list.h` (supplied in lab solution Week 4) could be used here.
-  * You also want a graph module. You can take a simple graph module you made for Lab Week 4, then add the input part. You should maintain the mapping between vertex id (which are integer from 0 onwards) and vertex names (or labels) which are letters. You could also use your graph module from Lab Week 7, ignoring the weight. Also remember in current wok, graphs are directed.
+  * You also want a graph module. You can take a simple graph module you made for Lab Week 4, then add the input part. You should maintain the mapping between vertex id (which are integer from 0 onwards) and vertex names (or labels) which are letters. You could also use your graph module from Lab Week 7, after chopping off the weight part. Also remember that in the current work, graphs are directed.
   * Now in your folder you have `list.c`, `graph.c`, `sort.c`, `tsort,c` and `.h` files. You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. There is no need to change `tsort.c` and `list.c`.
   * Spend time to finish `graph.c` first, and then you can implement topological sort functions in `sort.c`      
 
