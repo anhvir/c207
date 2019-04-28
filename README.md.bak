@@ -19,13 +19,11 @@ First at all, of course, create a separate folder for this week's lab. Let's cal
 
 ### Job 2: Writing your own topological sort.
 Of course, you need to build a graph first. In this week, we use directed graphs. Your program should take files such as `graph1.txt` and `graph2.txt` as input, and should produce outputs that are identical to those of the Unix's `tsort`.
-  * Note that vertex name is just a single character. So your graph have maximal 256 vertices (and hence, if you prefer, you can avoid some `malloc` for graphs). 
+  * Note that vertex name is just a single character. So your graph have maximal 256 vertices (and hence, if you prefer, you can avoid dynamic memory for graph). 
   * You might want to use adjacency list to represent graphs. Module `list.c` and `list.h` (supplied in lab solution Week 4) could be used here.
-  * You also want a graph module. You can take a simple graph module you made for Lab Week 4, then add the input part. You should maintain the mapping between vertex id (which are integer from 0 onwards) and vertex names (or labels) which are letters. You could also use your graph module from Lab Week 7, ignoring the weight. Also remember in current wok, graphs are directed.
-  * Now in your folder you have `list.c`, `graph.c`, `sort.c`, `tsort,c` and `.h` files. You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. There is no need to change `tsort.c` and `list.c`.
+  * You also want a graph module. You can take a simple graph module you made for Lab Week 4, then add the input part. You should maintain the mapping between vertex id (which are integer from 0 onwards) and vertex names (or labels) which are letters. You could also use your graph module from Lb Week 7, ignoring the weight.
+  * Now in your folder you have `list.c`, `graph.c`, `sort.c`, `tsort,c` and `.h` files. You can build `Makefile` by take a copy from assignment 1 and make some trivial changes.
   * Spend time to finish `graph.c` first, and then you can implement topological sort functions in `sort.c`      
-
-### Job 3 is interesting, just try it.
 
 
 How to use this github site?
@@ -37,7 +35,7 @@ How to use this github site?
 ### If you want to download the whole directory:
   * Download this whole directory by clicking `Clone or Download` --> `Download ZIP`, it will normally be downloaded to your `Downloads` folder under the name `c207-master` or `c207-master.ZIP`
   * Then copy or move the folder `c207` from `Downloads` to under your working folder, say, `week2/`
-  * If the downloaded `c207-master` has the extension `.ZIP`, you likely need to expand the zipped file with command `unzip c207-master.ZIP`. If that fails, you probably need to use some other tool to unzip, ask Google.
+  * If the downloaded `c207-master` has the extension `.ZIP`, you likely need to expand the zipped file with command `unzip c207-master.ZIP`. If that failes, you probably need to use some other tool to unzip, ask Google.
  
 -------------------------------------------------------------
 by Anh Vo, anhvir@gmail.com, for use in unimelb COMP20007 workshops.
