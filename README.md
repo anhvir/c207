@@ -5,27 +5,13 @@ c207 Week 07:
 --------------- 
   * For this week's lab, follow the instruction in LMS.Workshop.Week8. 
 If you want some hints, read the second part of this document. 
-  * Then, spend some time to inspect `graph.c`
-  * `graph.c` is the solution for week 7 lab, you just need to download this file and include it in your lab week 7 folder. `SPECIAL FEATURE:` I included 2 options for Dijkstra's, one of which is exactly as the pseudocode shown in the lecture, which can help you to see that there is not much difference between a pseudocode and a C function :-). This implementation of Dijkstra's also prints out all shortest paths. 
-  * `week7_git_solution.zip` is a folder that contains all files needed for week 7 solution. You shouldn't need this one. It is useful only if you have lost all of your week 7 files.
 
   Hints for lab this week
 ---------------------------
-### Job 1 - Unix's tsort:
-First at all, of course, create a separate folder for this week's lab. Let's call it `tsort` and make it the working directory. You should download all `*.c` and `.h` files supplied in LMS this week here. Then: 
-  * Create a text file `graph1.txt` for the graph shown in the lab sheet. It should have 8 lines exactly as as shown in the input for tsort.
-  * Try `tsort` with command `tsort < graph1.txt`.
-  * Build `graph2.txt` for the second graph drawn in the lab sheet. And try `tsort` for this graph. Also create a toposort ordering by hand and compare with the output of tsort.
-
-### Job 2 - Writing your own topological sort:
-Of course, you need to build a graph first. In this week, we use directed graphs. Your program should take files such as `graph1.txt` and `graph2.txt` as input, and should produce outputs that are identical to those of the Unix's `tsort`.
-  * Note that vertex name is just a single character. So your graph have maximal 256 vertices (and hence, if you prefer, you can avoid some `malloc` for graphs). 
-  * You might want to use adjacency list to represent graphs. Module `list.c` and `list.h` (supplied in lab solution Week 4) could be used here.
-  * You also want a graph module. You can take a simple graph module you made for Lab Week 4, then add the input part. You should maintain the mapping between vertex id (which are integer from 0 onwards) and vertex names (or labels) which are letters. You could also use your graph module from Lab Week 7, after chopping off the weight part. Also remember that in the current work, graphs are directed.
-  * Now in your folder you have `list.c`, `graph.c`, `sort.c`, `tsort,c` and `.h` files. You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. There is no need to change `tsort.c` and `list.c`.
-  * Spend time to finish `graph.c` first, and then you can implement topological sort functions in `sort.c`      
-
-### Job 3 - `gparhviz` is quite interesting, just try it.
+First at all, of course, create a separate folder for this week's lab. Let's call it `sort` and make it the working directory. You should download all `*.c` and `.h` files supplied in LMS this week here. Then: 
+  * You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. OR you can just compile with `gcc -Wall -o sort *.c`
+  * Try the program by running `./sort` and evaluate the output.
+  * Now, do the four tasks described in the lab sheet. Note that for Task 1 you can start hybrid_sort() with copying from quicksort(), then change it by make a call to insertion_sort() or quicksort() appropriately.   
 
 
 How to use this github site?
