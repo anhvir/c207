@@ -3,7 +3,7 @@ c207 Week 09:
 
   Instructions this week:
 --------------- 
-  * For this week's lab, follow the instruction in `LMS.Workshop.Week9`. Note that `all files` needed for this lab can be downloded from that `LMS.Workshop.Week9` thank to great work of our head tutor. 
+  * For this week's lab, follow the instruction in `LMS.Workshop.Week9`. Note that `all files` needed for this lab can be downloaded from that `LMS.Workshop.Week9` thank to great work of our head tutor. 
 If you want some hints, read the second part of this document. 
 
   Hints for lab this week
