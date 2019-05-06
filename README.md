@@ -9,7 +9,7 @@ If you want some hints, read the second part of this document.
   Hints for lab this week
 ---------------------------
 First at all, of course, create a separate folder for this week's lab. Let's call it `sort` and make it the working directory. You should download all `*.c` and `.h` files supplied in LMS this week here. Then: 
-  * You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. OR you can just compile with `gcc -Wall -o sort *.c`
+  * You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. OR you can compile with `gcc -Wall -o sort main.c arrays.c sorting.c`. OR, if you believe that you have no foreign files in the folde, you can just compile with `gcc -Wall -o sort *.c`
   * Try the program by running `./sort` and evaluate the output.
   * Now, do the four tasks described in the lab sheet. Note that for Task 1 you can start hybrid_sort() with copying from quicksort(), then change it by make a call to insertion_sort() or quicksort() appropriately.   
 
