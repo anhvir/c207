@@ -3,15 +3,15 @@ c207 Week 07:
 
   Instructions this week:
 --------------- 
-  * For this week's lab, follow the instruction in LMS.Workshop.Week8. 
+  * For this week's lab, follow the instruction in `LMS.Workshop.Week9`. Note that `all files` needed for this lab can be downloded from that `LMS.Workshop.Week9` thank to great work of our head tutor. 
 If you want some hints, read the second part of this document. 
 
   Hints for lab this week
 ---------------------------
-First at all, of course, create a separate folder for this week's lab. Let's call it `sort` and make it the working directory. You should download all `*.c` and `.h` files supplied in LMS this week here. Then: 
+First at all, of course, create a separate folder for this week's lab. Let's call it `sort` and make it the working directory. You should download all `*.c` and `.h` files supplied in LMS this week to this folder. Then: 
   * You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. OR you can compile with `gcc -Wall -o sort main.c arrays.c sorting.c`. OR, if you believe that you have no foreign files in the folder, you can just compile with `gcc -Wall -o sort *.c`
   * Try the program by running `./sort` and evaluate the output.
-  * Now, do the four tasks described in the lab sheet. Note that for Task 1 you can start hybrid_sort() with a copy of function quicksort(), then change it (just a bit) by make a call to insertion_sort() or quicksort() appropriately.   
+  * Now, do the four tasks described in the lab sheet. Note that for Task 1 you can start hybrid_sort() with a copy of function quicksort(), then change it (just a bit) by make a call to insertion_sort() or quicksort() appropriately. Note that you also need ao add some lines to main() in main.c so that it uses your new hybrid_sort().  
 
 
 How to use this github site?
