@@ -3,15 +3,34 @@ c207 Week 09:
 
   Instructions this week:
 --------------- 
-  * For this week's lab, follow the instruction in `LMS.Workshop.Week9`. Note that `all files` needed for this lab can be downloaded from that `LMS.Workshop.Week9` thank to great work of our head tutor. 
+  * For this week's lab, follow the instruction in `LMS.Workshop.Week9`. The programming exercise for this week is small, and you should be able to do it from scratch.
 If you want some hints, read the second part of this document. 
 
   Hints for lab this week
 ---------------------------
-First at all, of course, create a separate folder for this week's lab. Let's call it `sort` and make it the working directory. You should download all `*.c` and `.h` files supplied in LMS this week to this folder. Then: 
-  * You can build `Makefile` by take a copy from assignment 1 and make some trivial changes. OR you can compile with `gcc -Wall -o sort main.c arrays.c sorting.c`. OR, if you believe that you have no foreign files in the folder, you can just compile with `gcc -Wall -o sort *.c`
-  * Try the program by running `./sort` and evaluate the output.
-  * Now, do the four tasks described in the lab sheet. Note that for Task 1 you can start hybrid_sort() with a copy of function quicksort(), then change it (just a bit) by make a call to insertion_sort() or quicksort() appropriately. Note that you also need ao add some lines to main() in main.c so that it uses your new hybrid_sort().  
+Just build a single .c file, a data file, then compile and test.
+Some hints are:
+  * Remember to break a (even not so long) program into functions for easy management.
+  * You might want to have a function, say, `input()`, for reading input data, including a value for `n`, and the array `p[1..n]` of prices. You should use the value n to dynamically allocate memory for the arrays. Ideally the function `input` should return the value n. That also means that the array `p[]` (which has `n+1` elements) must be dynamically allocated within the function `input()`. You can do that with the function header:
+
+     `int input(int **p)`
+
+then, after scanf value for `n`, allocate memory with:
+
+	`*p=  calloc( (n+1) * sizeof ( **p ));`
+
+(remember the rule of `adding one more * to the sizeof`? )
+
+  * What's the difference between `calloc` and `malloc`? They are almost the same, except that `calloc` also zero the memory for you. So:
+
+	`*p=  calloc( (n+1) * sizeof ( **p ));`
+      
+is effectively equivalent to:
+  
+	`*p=  malloc( (n+1) * sizeof ( **p ));`
+
+	`for (i=0; i<n+1; i++) *p[i]= 0;`
+
 
 
 How to use this github site?
