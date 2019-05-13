@@ -16,9 +16,7 @@ Some hints are:
      `int input(int **p)`
 
 then, after scanf value for `n`, allocate memory with:
-
 	`*p=  calloc( (n+1) * sizeof ( **p ));`
-
 (remember the rule of `adding one more * to the sizeof`? )
 
   * What's the difference between `calloc` and `malloc`? They are almost the same, except that `calloc` also zero the memory for you. So:
