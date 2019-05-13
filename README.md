@@ -25,9 +25,9 @@ then, after scanf value for `n`, allocate memory with:
       
 is effectively equivalent to:
   
-	`*p=  malloc( (n+1) * sizeof ( **p ));`
+	*p=  malloc( (n+1) * sizeof ( **p ));
 
-	`for (i=0; i<n+1; i++) *p[i]= 0;`
+	for (i=0; i<n+1; i++) *p[i]= 0;
 
 
 
