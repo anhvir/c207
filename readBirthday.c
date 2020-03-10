@@ -47,6 +47,7 @@ int main(int argc, char *argv[]) {
 	//      if you think your extension is interesting, share
 	//      it with the class and/or your tutor  
 	
+	fclose(f);
 	return 0;
 }
 
