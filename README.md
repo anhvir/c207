@@ -9,6 +9,7 @@ Next, download **`functions.c`**, try to compile and run it. Then, edit it accor
   * If you think that readBirthday.c is too simple, try firther **`fibonacci.c`** which contains some advanced C elements.
   * Want somemore revisions? Explore the resources in LMS/Canvas.
   * If everything is just too easy for you, ask Anh for some challenging tasks.
+  * If most of the above things seems too difficult to you, don't worry to much, but ask Anh for some suggestions/help.
 
 Notes:
 -----------------
