@@ -2,8 +2,8 @@ c207 Lab Week 02: C revision
 =======
 Instructions for this lab:
 --------------------------
-  * First, goto LMS/Canvas, read the lab requirement for this week.
-Next, download functions.c, try to compile and run it. Then, edit it according to the requirements. **After that:**
+  * First, goto **`LMS/Canvas`**, read the lab requirement for this week.
+Next, download **`functions.c`**, try to compile and run it. Then, edit it according to the requirements. **After that:**
   * Download this **`c207`** directory (see instructions at the end of this text), and
   * Try **`readBirthday.c`** (which takes input from **`birtday.data.txt`**), and modify it according to the suggestions inside it, or as you wish. The main purpose is to revise your C programming skills. And then
   * If you think that readBirthday.c is too simple, try firther **`fibonacci.c`** which contains some advanced C elements.
