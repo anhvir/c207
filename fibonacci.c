@@ -37,10 +37,14 @@ int fibInPlace(int n);
    You can just ignore it, and go to implement each of the fib functions
 */  
 int main(int argc, char **argv) {
-	int (*fibFunctions[]) (int)= {fibRecursive, fibArray, fibInPlace};
+	int (*fibFunctions[]) (int)= {&fibRecursive, &fibArray, &fibInPlace};
 	/* fibFunctions is an array of "function pointers"
-		It's a way to pack functions into an array, and then we can
-		access an individual function with the help of an index */
+		Used here to pack functions into an array, and then we can
+		access an individual function with the help of an index
+       
+	  NOTE: We can also write
+	int (*fibFunctions[]) (int)= {fibRecursive, fibArray, fibInPlace};
+    */
 
 	int method= 0;     // default method is the first one
 	int n;

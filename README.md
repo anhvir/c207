@@ -6,10 +6,10 @@ Instructions for this lab:
 Next, download **`functions.c`**, try to compile and run it. Then, edit/try it according to the requirements. **After that:**
   * Download this **`c207`** directory (see instructions at the end of this text), and
   * Try **`readBirthday.c`** (which takes input from **`birtday.data.txt`**), and modify it according to the suggestions inside it, or as you wish. The main purpose is to revise your C programming skills. And then
-  * If you think that **`readBirthday.c`** is too simple, try firther **`fibonacci.c`** which contains some advanced C elements.
+  * If you think that **`readBirthday.c`** is too simple, try further **`fibonacci.c`** which contains some advanced C elements.
   * Want somemore revisions? Explore the resources in **`Canvas`**.
   * If everything is just too easy for you, ask Anh for some challenging tasks.
-  * If most of the above things, including the first item, seems too difficult to you, don't worry to much, but ask Anh for some suggestions/help anyway.
+  * If most of the above things, including the first item, seems too difficult to you, don't worry to much, but you certainly need more practice, and at least must finish the first item at home. You can ask Anh or your friends for some suggestions/help.
 
 Notes:
 -----------------
