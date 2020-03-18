@@ -1,20 +1,14 @@
-c207 Lab Week 02: C revision
+c207 Lab Week 03: C modules
 =======
 Instructions for this lab:
 --------------------------
-  * First, goto **`LMS/Canvas`**, read the lab requirement for this week.
-Next, download **`functions.c`**, try to compile and run it. Then, edit/try it according to the requirements. 
-  * Do exercise 3 in the lab sheet (resixing array). **After that:**
-  * Download this **`c207`** directory (see instructions at the end of this text), and
-  * Try **`readBirthday.c`** (which takes input from **`birtday.data.txt`**), and modify it according to the suggestions inside it, or as you wish. The main purpose is to revise your C programming skills. And then
-  * If you think that **`readBirthday.c`** is too simple, try further **`fibonacci.c`** which contains some advanced C elements.
-  * Want somemore revisions? Explore the resources in **`Canvas`**.
-  * If everything is just too easy for you, ask Anh for some challenging tasks.
-  * If most of the above things, including the first two items, seems too difficult to you, don't worry to much, but you certainly need more practice, and at least must finish the first two items at home. You can ask Anh or your friends for some suggestions/help.
+  * First, goto **`LMS/Canvas-->Modules-->Workshops-->Week3`**.
+You can also click [here](https://canvas.lms.unimelb.edu.au/courses/8028/pages/week-3) to navigate to that link.
+  * Read the lab section in **'workshop3.pdf'** from the above link.
+  * If you fully undestand the text, perform the lab tasks one by one in the described order.
+  * If you don't quite understand, cut the content of [play.c](./play.c) and do a small task together with Anh, that will help you to understand Makefile and modules.  
+  * Play further with the package **`postfix`** which include **`postfix.c, alistair_listops.c, listops.h, stack.c, stack.h`**. Try to compile and run the package. Then write a Makefile for the package.
 
-Notes:
------------------
-If you have any questions regarding C programming, don't hesitate to put you hand up during lab time. Anh is delighted to help.
 
 How to use this github site?
 ----------------------------
