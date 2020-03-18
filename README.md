@@ -6,7 +6,7 @@ Instructions for this lab:
 You can also click [here](https://canvas.lms.unimelb.edu.au/courses/8028/pages/week-3) to navigate to that link.
   * Read the lab section in **'workshop3.pdf'** from the above link.
   * If you fully undestand the text, perform the lab tasks one by one in the described order.
-  * If you don't quite understand, cut the content of [play.c](./play.c) and do a small task together with Anh, that will help you to understand Makefile and modules.  
+  * If you don't quite understand, cut the content of [play.c](https://github.com/anhvir/c207/blob/master/play.c) and do a small task together with Anh, that will help you to understand Makefile and modules.  
   * Play further with the package **`postfix`** which include **`postfix.c, alistair_listops.c, listops.h, stack.c, stack.h`**. Try to compile and run the package. Then write a Makefile for the package.
 
 
