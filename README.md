@@ -4,10 +4,15 @@ Instructions for this lab:
 --------------------------
   * First, goto **`LMS/Canvas-->Modules-->Workshops-->Week3`**.
 You can also click [here](https://canvas.lms.unimelb.edu.au/courses/8028/pages/week-3) to navigate to that link.
-  * Read the lab section in **'workshop3.pdf'** from the above link.
-  * If you fully undestand the text, perform the lab tasks one by one in the described order.
-  * If you don't quite understand, cut the content of [play.c](./play.c) and do a small task together with Anh, that will help you to understand Makefile and modules.  
-  * Play further with the package **`postfix`** which include **`postfix.c, alistair_listops.c, listops.h, stack.c, stack.h`**. Try to compile and run the package. Then write a Makefile for the package.
+  * Read (and discuss with your mates to understand) sections 1,2, and 3 of the "Computer Lab" page in **'workshop3.pdf'** (available from the above link).
+  * Try to do as required section 3, that is, "create your own Makefile to compile the racecar_test program from Question 2". The steps include:
+    * Download 
+    * Compile the package manually with
+```bat
+gcc -Wall -o racecar.c
+gcc -Wall -o racecar_test.c
+gcc -o racecar racecar.o racecar_test.c
+```
 
 
 How to use this github site?
