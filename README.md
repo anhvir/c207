@@ -14,6 +14,7 @@ gcc -Wall -o racecar.c
 gcc -Wall -o racecar_test.c
 gcc -o racecar racecar.o racecar_test.c
 ```
+
     * Then, build the Makefile using your editor. When editing, 
 note that each target should start from column 0 in the screen, but each associated command **must be preceded by one and only one `<TAB>`**  
     * After having Makefile, you can now run automatic compilation with
