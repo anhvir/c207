@@ -29,8 +29,8 @@ to recall how easy/difficult the job could be.
 
 Additional Exercises
 --------------------
-  * Play with the package `postfix` in the github page. This package:
-    * use Alistair's listopt.c to build a module for list (`alistair_listops.c` and `alistair_listops.h`),
+  * Play with the package `postfix` in this github page. This package:
+    * use Alistair's `listopt.c` to build a module for list (`alistair_listops.c` and `alistair_listops.h`),
     * use list module to build a module for stack (`stack.c` and `stack.h`)
     * use stack module to evaluate postfix expressions like 5 3 * (which means 5*3) and 5 3 2 + *  (which means 5*(3+2) )
   * Build Makefile for that postfix package
