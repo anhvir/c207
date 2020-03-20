@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
   add_lap(renault, 68.84);
 
   print_racecar_info(renault);
-  printf("Fastest Lap: %.2lf\n", fastest_lap(renault));
+  printf("========Fastest Lap: %.2lf\n", fastest_lap(renault));
 
   Racecar *ferrari = new_racecar("Sebastian Vettel", "Ferrari");
   add_lap(ferrari, 77.23);
