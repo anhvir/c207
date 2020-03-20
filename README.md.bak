@@ -36,7 +36,7 @@ make
 
   * Share your work with your mates, then check if your doing is correct by watching Anh doing the thing.
   * Move on with sections 4 and 5 of the `Computer Lab`. It would be great if you can build the list module by yourselves.
-  * If necessary, you can start with a simple program that:
+  * If neccessary, you can start with a simple program that:
     * build a linked list of just 3 elements: 10, 20, and 30 
     * print out that linked list  
     * remove the middle element 20 from the list
