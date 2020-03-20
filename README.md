@@ -1,5 +1,12 @@
 c207 Lab Week 03: C modules
 =======
+
+Notes:
+------
+Due to some changes, the additional exercise `postfix` has been removed.
+You will have chance to look at that later. Sorry for the confusion.
+
+
 Instructions for this lab:
 --------------------------
   * First, goto **`LMS/Canvas-->Modules-->Workshops-->Week3`**.
