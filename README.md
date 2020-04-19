@@ -1,11 +1,16 @@
-c207 workshop Easter Break
-===========================
-Please note that comp20007 has online consultations,
-as announced in LMS Canvas.
 
-The Discussion Forum is a good place to discuss, 
-to ask questions and to check your understanding.
+As this time, please note:
 
-You can also email Anh if you have questions.
+  * Finish assignment early,
+
+  * Attempt additional exercises supplied in LMS,
+
+  * Watch the coresponding lecture captures before attending online workshops,
+
+  * Use **Discussion Forum** effectively, 
+
+  * Email Anh if you have questions.
+
+Happy Learning!
 
 
