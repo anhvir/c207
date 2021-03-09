@@ -1,7 +1,7 @@
 Week 2:
 =======
 
-**`Lab_Notes.pdf:`**  A short guide on how to compile and run C
+[**`Lab_Notes.pdf:`**](./Lab_Notes.pdf)  A short guide on how to compile and run C
 programs, including tools for using your laptop to work with
 **dimefox** - a powerful university's server.  
 
