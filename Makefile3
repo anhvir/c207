@@ -18,7 +18,7 @@ HDR= racecar.h
 all: $(EXE)
 
 $(EXE): $(OBJ)
-	gcc $(CFLAGS) -o $(EXE) $(OBJ) $(LIB)
+	$(CC) $(CFLAGS) -o $(EXE) $(OBJ) $(LIB)
 
 $(OBJ): $(HDR) $(SRC)
 

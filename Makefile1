@@ -24,5 +24,16 @@ racecar.o: racecar.h racecar.c
 racecar_test.o: racecar_test.c
 	gcc -Wall -c racecar_test.c
 
+# "clean" is a target with no dependencies
+#   run "make clean" to delete all products of compilation,
+#   and hence to refesh all files for re-compilation withh "make"
 clean:
 	rm -f race *.o
+
+# Run the follwing 4 commands to see what "make clean" do:
+#        make
+#        make
+#        make clean
+#        make
+
+
