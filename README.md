@@ -10,7 +10,8 @@ programs, including tools for using your laptop to work with
 **dimefox** - a powerful university's server.  
 
 # How to try, say,  **Makefile1**
-1. copy **Makefile1** into your **race** directory, then run
+1. copy **Makefile1** into your **race** directory (where you have files
+**racecar.h**, **racecar.c**, and **racecar_test.c**) then run
 ```bash
 cp Makefile MyMakefile
 cp Makefile1 Makefile
