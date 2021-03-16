@@ -19,12 +19,12 @@ make
 ```
 (the first command is to backup your vertsion of Makefile, you should do it only once)
 
-1. Try
+2. Try
 ```bash
 make
 ```
 
-1. Now try
+3. Now try
 ```bash
 make clean
 make
