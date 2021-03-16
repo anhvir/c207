@@ -32,6 +32,11 @@ make
 ```
 and see the differences. 
 
+4. Now try **Makefile2** then **Makefile3", they all are equivalent to **Makefile1**.
+Make sure that at the end you see that you can use **Makefile3** for many other
+projects, just with some triviall chnages.
+
+
 -------------------------------------------------------------
 by avo@unimelb.edu.au, for use in unimelb COMP20007.
 
