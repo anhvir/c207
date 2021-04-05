@@ -1,0 +1,28 @@
+# lines starting with # are comments
+# When you run "make", that command reads input from file "Makefile"
+#    in the current directory
+# Then, it looks for the first target (which is "race" in this file)
+#    and execute this target, that is:
+#   - it looks for each file in the dependency list ( racecar.o, racecar_test.o) and:
+#       + check to see if the file is ready for being executed
+#       + if not ready, it take the filename as a target and find,
+#         and execute that target
+#   - then, it execute the associated commands ("gcc -Wall -o race ...") if any
+# 
+# Note: you also can run "make clean", in this case, make will execute the
+#   target "clean", and in this case, delete the executable file "race"
+#   and all the object files *.o
+# Target "clean" is useful for refreshing all the file to force recompilation
+#   by the subsequent "make"      
+
+race: racecar.o racecar_test.o
+	gcc -Wall -o race racecar.o racecar_test.o 
+
+racecar.o: racecar.h racecar.c
+	gcc -Wall -c racecar.c 
+
+racecar_test.o: racecar_test.c
+	gcc -Wall -c racecar_test.c
+
+clean:
+	rm -f race *.o

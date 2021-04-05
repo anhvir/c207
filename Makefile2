@@ -1,0 +1,22 @@
+# This file is equivalent to Makefile1
+# but use some constants such as CC, CFLAGS, EXE
+# and have and additional target "all" which is the FIRST target
+# So "make" is equivalent to "make all"
+# YOPUR TASKS: inderstand the syntax of using constant  
+
+CC= gcc
+CFLAGS= -Wall
+EXE= race
+LIB= 
+
+all: ${EXE}
+
+${EXE}: racecar.o racecar_test.o
+	${CC} ${CFLAGS} -o race racecar.o racecar_test.o ${LIB}
+
+racecar.o: racecar.h racecar.c
+
+racecar_test.o: racecar_test.c
+
+clean:
+	rm -f race *.o
