@@ -1,0 +1,23 @@
+#This file is equivalent to Makefile2
+# While it is more complicated than Makefile1, you can easily change it
+#    to fit any new project
+#    Just by changing lines SRC=  and HDR= appropriately!
+
+CC= gcc
+CFLAGS= -Wall
+EXE= race
+LIB= 
+
+# Here are new stuffs: SRC and OBJ for the list of source and object files 
+
+# SRC contain all needed *.c files, here we have only two .c files
+SRC= racecar.c racecar_test.c
+
+# OBJ is just the same as SRC, but with ".c" being replaced by ".o"
+OBJ= $(SRC:.c=.o)
+
+$(EXE): $(OBJ)
+	$(CC) $(CFLAGS) -o $(EXE) $(OBJ) $(LIB)
+
+clean:
+	rm -f race *.o

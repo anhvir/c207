@@ -1,0 +1,20 @@
+# This file is equivalent to Makefile1
+# but use some constants such as CC, CFLAGS, EXE
+# YOUR TASKS: inderstand the syntax of using constants (how to define, how to use)  
+
+CC= gcc
+CFLAGS= -Wall
+EXE= race
+LIB= 
+
+$(EXE): racecar.o racecar_test.o
+	$(CC) $(CFLAGS) -o race racecar.o racecar_test.o $(LIB)
+
+# if we don't write the target for, say, the dependency "racecar.o"
+#   "make" will automatically generate it as   
+# racecar.o: racecar.c
+#   $(CC) $(CFLAGS) -c racecar.c
+# that's why we don't need to explicitly write it  
+
+clean:
+	rm -f race *.o
